@@ -85,8 +85,6 @@ bootstrap
 mvc
 azure
 ruby
-active
-directory
 java
 kubernetes
 visual basic
@@ -192,5 +190,10 @@ msp
 puppet
 cyber
 fpc
-idsips
+idsip
 hipaa
+ember
+react native
+oculus rift
+backbone
+nagios

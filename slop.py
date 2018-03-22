@@ -1,38 +1,64 @@
-from collections import Counter
-from bs4 import BeautifulSoup as bs4
-import pandas as pd
-import requests
+# from collections import Counter
+# from bs4 import BeautifulSoup as bs4
+# import pandas as pd
+# import requests
+#
+# city = 'losangeles'
+# job_cat = 'sad'
+# depth = 5
+# url = 'https://' + city + '.craigslist.org/search/' + job_cat
+# #params = dict(bedrooms=1, is_furnished=1)
+# rsp_page = requests.get(url, params='')
+# #print(rsp.url)
+# search_html = bs4(rsp_page.text, 'html.parser')
+# #print(search_html.prettify()[:20000])
+# jobs = search_html.find_all('p', attrs={'class': 'result-info'})
+# #print(len(jobs))
+# for x in range(0, depth):
+#     search_element = jobs[x]
+#     #print(this_job.prettify())
+#     dater = search_element.findAll(attrs={'class': 'result-date'})[0].text
+#     title = search_element.findAll(attrs={'class': 'result-title hdrlnk'})[0].text
+#     link = search_element.parent.contents[1].attrs['href']
+#     #print('dater: ' + dater)
+#     #print('meta: ' + meta)
+#     #print('link: ' + link)
+#     #print(a_job.prettify())
+#     rsp_sub = requests.get(link, params='')
+#     #print(rsp_sub.url)
+#     job_html = bs4(rsp_sub.text, 'html.parser')
+#     #print(job_html.prettify()[:20000])
+#     job = job_html.find_all('section', attrs={'id': 'postingbody'})
+#     #print(len(job))
+#     description = job[0].text
+#     print(title)
+#     print(description[30:80] + '. . . ')
+#     print('===============================================')
+#
+# ad_texts = []
+# ad_file = open(source_file, 'r', encoding='utf-8', errors='ignore')
+# ad_texts = ad_file.read().split('&&&')
+# ad_file.close()
+# # Check if ad contains tech words from list and append to new list
+# l = []
+# for ad in ad_texts:
 
-url_base = 'https://losangeles.craigslist.org/search/sad'
-#params = dict(bedrooms=1, is_furnished=1)
-rsp = requests.get(url_base, params='')
+job_cats = {'eng':'internet-engineering','sof':'software-qa-dba-etc',
+            'tch':'technical-support','sad':'systems-networking'}
 
-print(rsp.url)
+for cat in job_cats:
+    print(cat)
+depth = 5
+min = 3
+dep = 0
+fred = 'False'
+dep = depth if depth > min else min
+print(dep)
+fruit = 'Apple'
+isApple = True if fruit == 'Apple' else False
+print(isApple)
 
-html = bs4(rsp.text, 'html.parser')
-#print(html.prettify()[:20000])
+s1 = "this is the first line.\nthis is bbbb the second line\nthe third stops abrubptly "
+s2 = "bbbb"
 
-jobs = html.find_all('p', attrs={'class': 'result-info'})
-print(len(jobs))
-this_job = jobs[15]
-#print(this_job.prettify())
-dater = this_job.findAll(attrs={'class': 'result-date'})[0].text
-meta = this_job.findAll(attrs={'class': 'result-title hdrlnk'})[0].text
-link = this_job.parent.contents[1].attrs['href']
-#title = this_job.findAll(attrs={'class': 'result-meta'})[0].text
-#tags = this_job.findAll(attrs={'class': 'result-tags'})[0].text
-print('dater: ' + dater)
-print('meta: ' + meta)
-print('link: ' + link)
-#print('title: ' + title)
-#print('tags: ' + tags)
-#print(this_job.prettify())
-
-rsp2 = requests.get(link, params='')
-print(rsp2.url)
-html2 = bs4(rsp2.text, 'html.parser')
-print(html2.prettify()[:20000])
-jobs2 = html2.find_all('section', attrs={'id': 'postingbody'})
-print(len(jobs2))
-fred = jobs2[0].text
-print(fred)
+print(s1[(s1.index(s2) - 20):(s1.index(s2)+20)])

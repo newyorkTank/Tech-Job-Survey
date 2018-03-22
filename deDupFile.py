@@ -11,7 +11,7 @@ def remove_duplicates(values):
 
 # Remove duplicates from this list.
 #values = [5, 5, 1, 1, 2, 3, 4, 4, 5]
-f = open('good_words_coding', 'r', encoding='utf-8', errors='ignore')
+f = open('search_words', 'r', encoding='utf-8', errors='ignore')
 lines = f.readlines()
 f.close()
 words = []
