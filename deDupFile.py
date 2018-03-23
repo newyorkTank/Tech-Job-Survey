@@ -9,19 +9,45 @@ def remove_duplicates(values):
             seen.add(value)
     return output
 
-# Remove duplicates from this list.
-#values = [5, 5, 1, 1, 2, 3, 4, 4, 5]
-f = open('search_words', 'r', encoding='utf-8', errors='ignore')
-lines = f.readlines()
-f.close()
-words = []
-for line in lines:   # Cleanups
-    #word = text.split('\n')  # Use first line to test parsing
-    line = line.strip()
-    if len(line) > 1:
-        words.append(line.lower())
-result = remove_duplicates(words)
-for x in result:
+def sorted_dupless(lineas):
+    words = []
+    for line in lineas:  # Cleanups
+        # word = text.split('\n')  # Use first line to test parsing
+        line = line.strip()
+        if len(line) > 1:
+            words.append(line.lower())
+    words = remove_duplicates(words)
+    words.sort()
+    return words
+
+def file2list(file):
+    f = open(file, 'r+', encoding='utf-8', errors='ignore')
+    lines = f.readlines()
+    f.close()
+    wlist = []
+    for line in lines:  # Cleanups
+        line = line.strip()
+        if len(line) > 1:
+            wlist.append(line.lower())
+    return wlist
+
+###################     BEGIN
+my_file = 'search_words'
+fresh_list = file2list(my_file)
+results = sorted_dupless(fresh_list)
+for x in results:
     print(x)
-print(len(words))
-print(len(result))
+print('Comparing totals of DeDupped:' + str(len(results)) + ' and Original:' + str(len(fresh_list)))
+while len(results) != len(fresh_list):
+    go = input('Replace file ' + my_file + ' with Dedupped? (y/n):')
+    if go.lower() == 'y':
+        fw = open(my_file, 'w')
+        for x in results:
+            fw.write(x + '\n')
+        fw.close()
+        fresh_list = file2list(my_file)
+        print('Comparing totals of DeDupped:' + str(len(results)) + ' and updated file:' + str(len(fresh_list)))
+    else:
+        print('. . . guess not.')
+        break
+print('Done')

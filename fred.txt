@@ -1,0 +1,10 @@
+*nix
+.net
+365
+a+
+active directory
+adobe audience manager
+agile
+ajax
+alb
+amazon
