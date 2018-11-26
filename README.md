@@ -4,9 +4,9 @@
 
  1. Reverse and search for good_words* (DONE)
  2. Deal with phrases (Active Directory, Amazon Web Services)  (DONE)
- 3. Deal with variations of words (SQL, MSSQL, MySQL, NoSQL, Mongo, Maria)
+ 3. Deal with variations of words (SQL, MSSQL, MySQL, NoSQL, Mongo, Maria = SQL)
  4. Deal with special characters C#, C++, stuff with dashes  (DONE)
- 5. Deal with plurals, while make an exception from 17.
+ 5. Deal with plurals, will make an exception from 17.
  6. Limit count per ad, by doing the parsing on an ad by ad basis (DONE)
  7. and by not counting terms that get repeated in the same ad (DONE)
  8. Implement inputs, and pretty up the output to a file
@@ -23,3 +23,4 @@
 19. Installation (could it be made executable?)
 20. Make parse4leftovers.py use scrapping, and add more words to search_words
 21. Have dedup offer to replace search_words with deduped sorted list (DONE)
+22. Ticker - spinney wheel and dots across the screen(like dot/5 ads)

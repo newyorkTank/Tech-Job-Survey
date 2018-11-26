@@ -32,22 +32,24 @@ def file2list(file):
     return wlist
 
 ###################     BEGIN
-my_file = 'search_words'
+f = 'cities.txt'
+#f = 'search_words'
+my_file = f
 fresh_list = file2list(my_file)
 results = sorted_dupless(fresh_list)
 for x in results:
     print(x)
 print('Comparing totals of DeDupped:' + str(len(results)) + ' and Original:' + str(len(fresh_list)))
-while len(results) != len(fresh_list):
-    go = input('Replace file ' + my_file + ' with Dedupped? (y/n):')
-    if go.lower() == 'y':
-        fw = open(my_file, 'w')
-        for x in results:
-            fw.write(x + '\n')
-        fw.close()
-        fresh_list = file2list(my_file)
-        print('Comparing totals of DeDupped:' + str(len(results)) + ' and updated file:' + str(len(fresh_list)))
-    else:
-        print('. . . guess not.')
-        break
+#while len(results) != len(fresh_list):
+go = input('Replace file ' + my_file + ' with Dedupped? (y/n):')
+if go.lower() == 'y':
+    fw = open(my_file, 'w')
+    for x in results:
+        fw.write(x + '\n')
+    fw.close()
+    fresh_list = file2list(my_file)
+    print('Comparing totals of DeDupped:' + str(len(results)) + ' and updated file:' + str(len(fresh_list)))
+else:
+    print('. . . guess not.')
+    #break
 print('Done')

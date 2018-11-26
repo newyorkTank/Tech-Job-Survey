@@ -42,28 +42,33 @@ connectwise
 crestron
 crm
 css
+cvs
 cyber
 datadog
 debian
 dell
+desktop central
 django
 dns
 docker
 dot net
 dreamweaver
 drupal
+dtc
 ec2
 ecs
 elasticache
 elasticsearch
 elb
 ember
+ephi
 erlang
 erp
 esx
 excel
 exchange
 fedora
+ferpa
 firewall
 flask
 foundation
@@ -78,6 +83,7 @@ google cloud
 google office
 grafana
 groovy
+heroku
 hikaricp
 hipaa
 html
@@ -96,6 +102,7 @@ jira
 jquery
 kafka
 kaseya
+kotlin
 kubernetes
 kvm
 lamp
@@ -105,8 +112,11 @@ linuxunix
 lvm
 mac
 magento
+manage engine
+manageengine
 mariadb
 mcse
+mercurial
 microsoft
 microsoft office
 microsoft sql
@@ -131,6 +141,7 @@ nosql
 npm
 nunit
 oculus rift
+openshift
 ospf
 osx
 outlook
@@ -150,7 +161,7 @@ red hat
 redhat
 redux
 restful
-routers
+router
 ruby
 s3
 salt
@@ -158,6 +169,8 @@ samba
 san
 sans
 sass
+scala
+sccm
 scrum
 selenium
 seo
@@ -165,6 +178,7 @@ sharepoint
 sim
 sip
 solarwind
+spring
 sql
 sso
 stackstorm
@@ -174,11 +188,13 @@ susi
 swing
 switch
 syslog
+system center configuration manager
 tcpip
 team city
 team foundation
 terraform
 tfs
+typescript
 ubuntu
 unix
 unixlinux
@@ -197,6 +213,7 @@ vpn
 vsphere
 vue
 wcf
+web service
 windows
 wordpress
 xhtml
