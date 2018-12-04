@@ -1,19 +1,16 @@
-[![Build Status](https://travis-ci.org/hubotio/hubot.svg?branch=master)](https://travis-ci.org/hubotio/hubot) [![Coverage Status](https://coveralls.io/repos/github/hubotio/hubot/badge.svg?branch=master)](https://coveralls.io/github/hubotio/hubot?branch=master)
+[![Build Status](https://cascademesh.com/tech-job-survey)](https://cascademesh.com/tech-job-survey) [![Coverage Status](https://cascademesh.com/tech-job-survey)](https://cascademesh.com/tech-job-survey)
 
-# Hubot
+# Tech Jobs Survey
 
-Hubot is a framework to build chat bots, modeled after GitHub's Campfire bot of the same name, hubot.
-He's pretty cool. He's [extendable with scripts](http://hubot.github.com/docs/#scripts) and can work
-on [many different chat services](https://hubot.github.com/docs/adapters/).
+TJS aims to scrap a popular online classified app to analyze it for particular tech terms, so as to estimate the use of those technologies in the market place.
 
-This repository provides a library that's distributed by `npm` that you
-use for building your own bots.  See the [documentation](http://hubot.github.com/docs)
-for details on getting up and running with your very own robot friend.
+It also graphically displays the results from past surveys.
 
-In most cases, you'll probably never have to hack on this repo directly if you
-are building your own bot. But if you do, check out [CONTRIBUTING.md](CONTRIBUTING.md)
+A variation is under consideration that will submit custom resumes based on a given criteria.
 
-If you'd like to chat with Hubot users and developers, [join us on Slack](https://hubot-slackin.herokuapp.com/).
+Some additional ambitions include, building useful libraries for these tasks, and React-based front end.
+
+Currently it is solo project, but as the scope expands and changes I may consider requesting contributions.
 
 ## License
 
