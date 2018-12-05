@@ -1,37 +1,41 @@
 # Tech-Survey-Tool Roadmap
 
-Tech-Survey-Tool v3 aims to scrap Craigslist for job listings and analyze which technologies are in demand by employers.
+Tech-Survey-Tool v3 aims to scrap a popular online classified app for job listings and analyze which technologies are in demand by employers.
 
 This roadmap represents some of priorities over the next couple months. Issues or pull requests will be opened to discuss each of these items as they progress.
 
-## 1. Front End Work
+## Front End Work
+1. Setup a dataentry page in React
+    - [ ] Create a React page
+    - [ ] Create interface Pulldown of search_word lists, check box of categories
+    - [ ] Create a Frame with checkboxes for markets including button for None, and All.
+    - [ ] Create a React page
+    - [ ] Create Button to Start
+    - [ ] Create ticker box that is populated with same output that currently goes to the console.
+1. Query database of results for a type of scrap over a restricted time period
+1. Make a graph of results
 
-1. - [ ] Setup a dataentry page in React
-1. - [ ] Kick off a scrap
-1. - [ ] Display results in a frame on the original page
-1. - [ ] Query database of results for a type of scrap over a restricted time period
-1. - [ ] Make a graph of results
+## Analysis Work
 
-## 2. Analysis Work
+Need to feed the correct batches of terms to count as ads go scraping by. Have to ignore terms within terms, and obvious redundancies. Also need to capture some chunk of text before and after for further analysis.
 
-Need to feed the correct batches of terms to count as ads go scrapying by. Have to ignore terms within terms, and obvious redundancies. Also need to capture some chunk of text before and after for further analysis.
-
-- [ ] Store results in mySQL
-- [ ] Store results in mySQL
-- [ ] Make a React front end for data entry and displaying results
-- [ ] place on web-site
-- [ ] purge tags from description
-- [ ] make output for list_dict_4swords pretty
-- [ ] Installation (could it be made executable?)
-- [ ] Deal with variations of words (SQL, MSSQL, MySQL, NoSQL, Maria = SQL)
-- [ ] Deal with plurals, will make an exception from 4.
-- [ ] need to create exclusions i.e. ember but not member, java but not javascript
-- [ ] Decide what to keep from ads, and output that to a file
-- [ ] Create a loop at the bottom that offers user to print detail of one term.
-- [ ] Refactor, look for cleanups.
-- [ ] Create mechanism for picking one ad that contains several terms
-- [ ] Capture essential information for that ad
-- [ ] Send email with Custom Resume and cover letter to that company.
+1. Store results in mySQL
+1. Store results in mySQL
+1. Make a React front end for data entry and displaying results
+1. place on web-site
+1. purge tags from description
+1. make output for list_dict_4swords pretty
+1. Installation (could it be made executable?)
+1. Deal with variations of words (SQL, MSSQL, MySQL, NoSQL, Maria = SQL)
+1. Deal with plurals, will make an exception from 4.
+1. need to create exclusions i.e. ember but not member, java but not javascript
+1. Decide what to keep from ads, and output that to a file
+1. Create a loop at the bottom that offers user to print detail of one term.
+1. Refactor, look for cleanups.
+1. Create mechanism for picking one ad that contains several terms
+1. Capture essential information for that ad
+1. Send email with Custom Resume and cover letter to that company.
+#### Completed
 - [x] Limit count per ad, by doing the parsing on an ad by ad basis
 - [x] and by not counting terms that get repeated in the same ad
 - [x] Scrap not cut-n-paste
@@ -44,7 +48,7 @@ Need to feed the correct batches of terms to count as ads go scrapying by. Have 
 - [x] Deal with special characters C#, C++, stuff with dashes
 - [x] Reverse and search for good_words*
 
-## 3. Refactor
+## Refactor
 
 As the project evolves there is a tendency to get things done in lue of best programming practices. The aim here is to clean up the code.
 
